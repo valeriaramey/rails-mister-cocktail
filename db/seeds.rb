@@ -7,9 +7,9 @@ Cocktail.destroy_all
 Ingredient.destroy_all
 Dose.destroy_all
 
-mojito = Cocktail.create(name: 'mojito', image_url: 'https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')
-bloody_mary = Cocktail.create(name: 'bloody mary', image_url: 'https://images.unsplash.com/photo-1551734322-f43b0798585a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')
-margarita = Cocktail.create(name: 'margarita', image_url: 'https://images.unsplash.com/photo-1556855810-ac404aa91e85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80' )
+mojito = Cocktail.create(name: 'mojito')
+bloody_mary = Cocktail.create(name: 'bloody mary')
+margarita = Cocktail.create(name: 'margarita')
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
