@@ -1,0 +1,29 @@
+.card {
+  height: 300px;
+  box-shadow: 5px 3px;
+  background-position: center;
+  background-size: cover !important;
+  position: relative;
+  color: white;
+
+}
+
+.cocktail-card-content h2 {
+  bottom: 10px;
+  left: 10px;
+  font-family: Arial, sans-serif;
+
+}
+
+.card-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #EFF7CF;
+
+}
+
+.card-link:hover {
+  opacity: 1;
+  color: black;
+}
