@@ -1,4 +1,36 @@
 // Specific CSS for your home-page
-.body {
-  background: #EFF7CF;
+body {
+  background-color: white;
+}
+
+.flexbox {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.dose-name {
+  font-size: 20px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.recipe-headline {
+  font-size: 30px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.cocktail-name {
+  white-space: nowrap;
+
+}
+
+.cocktail-header {
+  font: Helvetica;
+}
+
+
+.page-title {
+  font: Helvetica;
 }

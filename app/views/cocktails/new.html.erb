@@ -1,11 +1,18 @@
-<div class="container">
-  <%= link_to "Back to all cocktails", cocktails_path %>
-  <h1>Create a new cocktail</h1>
-  <%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.button :submit, class: "btn btn-primary"%>
-<% end %>
-</div>
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-static-top">
+    <h5>Barra de Cócteles</h5>
+    <%= link_to "Back to all cocktails", cocktails_path, class: "btn btn-primary" %>
+  </div>
+  <div class="container">
+    <h1 class="page-title">Create a new cocktail</h1>
+    <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, class: "btn btn-primary"%>
+    <% end %>
+  </div>
+
+
+
+
 
 

@@ -1,17 +1,25 @@
 .banner {
   background-size: cover !important;
   background-position: center;
+  overflow: hidden;
   padding: 150px 0;
-  background-image: linear-gradient(rgba(0,50,100,0.5) 0%, rgba(40,50,20,0.6) 30%), asset-url('banner1.jpeg');
+  background-image: linear-gradient(rgba(0,0,100,0.2) 0%, rgba(0,0,20,0.1) 30%), asset-url('banner1.jpeg');
   display: flex;
   margin-bottom: 30px;
+  width: 100%;
+  height: auto;
 
 }
+
+ .banner-content {
+   margin-top: 50px;
+
+ }
 
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: #ffe66d;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 50px;
   font-weight: bold;
@@ -22,10 +30,9 @@
 
 .banner p {
   font-size: 24px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-family: Arial, sans-serif;
+  color: #f7fff7;
+  opacity: 1;
+  font-family: Geneva;
   position: relative;
   left: 10px;
   top: 70px;
@@ -34,10 +41,10 @@
  .home-button {
   background: black;
   border: white;
-  position: fixed;
   left: 1350px;
   top: 20px;
-  opacity: 70%
+  opacity: 70%;
+  font: Helvetica;
  }
 
 
@@ -50,4 +57,11 @@
 .btn-primary {
   background: black;
   border: white;
+  font-family: Helvetica;
+}
+
+.btn-primary:hover {
+  background: black;
+  color: white;
+  opacity: 0.5;
 }

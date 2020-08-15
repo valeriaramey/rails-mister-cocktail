@@ -1,28 +1,33 @@
-<div class=container>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-static-top">
+  <h5>Barra de Cócteles</h5>
+  <%= link_to "Back to all cocktails", cocktails_path, class: "btn btn-primary" %>
+</div>
 
-    <%= cl_image_tag @cocktail.photo.key, width: 300, height: 250, crop: :fill %>
-    <h1><%=  @cocktail.name %></h1>
-
+<div class="flexbox">
     <div class="row">
       <div class="col-sm-12 col-md-6">
-        <h5>Cocktail Recipe</h5>
+        <h1 class="cocktail-name"><%=  @cocktail.name %></h1>
+        <h5 class="recipe-headline">Recipe</h5>
         <% @cocktail.doses.each do |dose| %>
-           <p><%= dose.ingredient.name %> | <%= dose.description %></p>
-           <div class="delete-action">
-              <%= link_to dose_path(dose),
-                      method: :delete,
-                      data: { confirm: "Are you sure you want to delete?" } do %>
-                      <i class="far fa-trash-alt"></i>
-           <% end  %>
+           <div class="ingredient-content d-inline">
+             <div class="dose-name d-inline">
+              <%= dose.ingredient.name %> | <%= dose.description %>
+               <%= link_to dose_path(dose),
+                  method: :delete,
+                  data: { confirm: "Are you sure you want to delete?" } do %>
+                  <i class="trash-icon far fa-trash-alt d-inline ml-2"></i>
+               <% end  %>
+             </div>
            </div>
         <% end  %>
+        <div class="btn btn-primary mt-3">
+        <%= link_to 'Add Ingredients', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+        </div>
       </div>
     </div>
-
-    <%= link_to 'Add Ingredients', new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
-
-    <%= link_to "Back to all cocktails", cocktails_path, class: "btn btn-primary" %>
-
+    <div class="cocktail-photo mt-5 p-5">
+      <%= cl_image_tag @cocktail.photo.key, width: 300, height: 450, crop: :fill, class: "mt-3" %>
+    </div>
 </div>
 
 
