@@ -27,10 +27,25 @@ body {
 }
 
 .cocktail-header {
-  font: Helvetica;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 
 .page-title {
   font: Helvetica;
+  margin-top: 20px;
 }
+
+
+.bg-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  filter: sepia(.8);
+}
+
+
+

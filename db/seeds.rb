@@ -20,6 +20,7 @@ tequila = Ingredient.create(name: "Tequila")
 vodka = Ingredient.create(name: "Vodka")
 rhum = Ingredient.create(name: "Rhum")
 tomato_juice = Ingredient.create(name: "Tomato Juice")
+pineapple_juice = Ingredient.create(name: "Pineapple Juice")
 
 mojito_mint = Dose.create(cocktail: mojito, ingredient: mint, description: '6 leaves')
 mojito_lemon = Dose.create(cocktail: mojito, ingredient: lemon, description: '1.5 oz')
