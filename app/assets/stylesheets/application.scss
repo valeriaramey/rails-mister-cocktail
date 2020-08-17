@@ -22,12 +22,14 @@
   color: #ffe66d;
 }
 
+
 form {
 width:50%;
 height:550px;
 margin:auto;
 position:relative;
 }
+
  input {
 width:50%;
 height: 30px;
@@ -43,7 +45,6 @@ height: 30px;
   height: 40px;
 
 }
-
 
 .home-button {
   background: black;
@@ -75,6 +76,38 @@ height: 30px;
   opacity: 0.5;
 }
 
+
+.list-group-item {
+  display: flex;
+  align-self: center;
+  column-gap: 5px;
+  width: 50%;
+
+}
+
+.review-form-container {
+  margin-top: 50px;
+}
+
+.reviews-container h3  {
+  text-align: center;
+
+}
+
+.reviews-container p  {
+  text-align: center;
+
+}
+
+.rendered-form {
+  justify-content: center;
+  width: 100%;
+}
+
+
+.row-show {
+  width: 300px;
+}
 
 @media(max-width: 992px) {
   .cards {

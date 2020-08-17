@@ -1,0 +1,14 @@
+  <div class='review-form-container' >
+  <h4 class='header text-center mt-5'>Add a review</h4>
+  <div class="review-container mt-3">
+    <%= simple_form_for [cocktail, review] do |f| %>
+      <%= f.input :rating, collection: 0..5 %>
+      <%= f.input :content %>
+      <%= f.button :submit, class: "form-button btn btn-primary" %>
+    <% end %>
+
+  </div>
+
+
+
+  </div>
