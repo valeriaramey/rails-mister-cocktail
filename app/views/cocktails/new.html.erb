@@ -1,7 +1,9 @@
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-static-top">
-    <h5>Barra de Cócteles</h5>
-    <%= link_to "Back to all cocktails", cocktails_path, class: "btn btn-primary" %>
-  </div>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-static-top">
+  <%= link_to cocktails_path, class: "navig-link" do %>
+  <h5>Barra de Cócteles</h5>
+  <% end %>
+  <%= link_to "Back to all cocktails", cocktails_path, class: "btn btn-primary" %>
+</div>
   <div class="container">
     <h1 class="page-title text-center">Create a new cocktail</h1>
     <%= simple_form_for @cocktail do |f| %>
