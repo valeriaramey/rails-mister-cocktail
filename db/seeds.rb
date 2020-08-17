@@ -6,10 +6,9 @@
 Cocktail.destroy_all
 Ingredient.destroy_all
 Dose.destroy_all
+Review.destroy_all
 
-mojito = Cocktail.create(name: 'mojito')
-bloody_mary = Cocktail.create(name: 'bloody mary')
-margarita = Cocktail.create(name: 'margarita')
+
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
@@ -22,11 +21,4 @@ rhum = Ingredient.create(name: "Rhum")
 tomato_juice = Ingredient.create(name: "Tomato Juice")
 pineapple_juice = Ingredient.create(name: "Pineapple Juice")
 
-mojito_mint = Dose.create(cocktail: mojito, ingredient: mint, description: '6 leaves')
-mojito_lemon = Dose.create(cocktail: mojito, ingredient: lemon, description: '1.5 oz')
 
-margarita_lemon = Dose.create(cocktail: margarita, ingredient: lemon, description: '5 oz')
-margarita_tequila = Dose.create(cocktail: margarita, ingredient: tequila, description: '2 oz')
-
-bloody_tomato = Dose.create(cocktail: bloody_mary, ingredient: tomato_juice, description: '3 oz')
-bloody_tequila = Dose.create(cocktail: bloody_mary, ingredient: tequila, description: '3 oz')
